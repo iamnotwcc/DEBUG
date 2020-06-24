@@ -13,38 +13,38 @@ int main() {
 }
 
 double bisection(int p, int q, double (*func)(int, int, double)) {
-     double a;
-	double b;
-	double m;
-	a = -20.0;
-	b = 20.0;
-	m = (a + b) / 2;
-	if (fabs(f(p, q, m)) < EPSILON){
-		return m;
-	} else if((f(p, q, m) < 0 && f(p, q, a) > 0) || (f(p, q, m) > 0 && f(p, q, a) < 0)){
-		while (fabs(f(p, q, m)) >= EPSILON){
-			if((f(p, q, m) < 0 && f(p, q, a) > 0) || (f(p, q, m) > 0 && f(p, q, a) < 0)){
-				b = m;
-				m = (a + b) / 2;
-			} else if ((f(p, q, m) < 0 && f(p, q, b) > 0) || (f(p, q, m) > 0 && f(p, q, b) < 0)){
-				a = m;
-				m = (a + b) / 2;
-			}
-		}
-		return m;
-	} else if ((f(p, q, m) < 0 && f(p, q, b) > 0) || (f(p, q, m) > 0 && f(p, q, b) < 0)) {
-		while (fabs(f(p, q, m)) >= EPSILON){
-			if((f(p, q, m) < 0 && f(p, q, a) > 0) || (f(p, q, m) > 0 && f(p, q, a) < 0)){
-				b = m;
-				m = (a + b) / 2;
-			} else if ((f(p, q, m) < 0 && f(p, q, b) > 0) || (f(p, q, m) > 0 && f(p, q, b) < 0)){
-				a = m;
-				m = (a + b) / 2;
-			}
-		}
-		return m;
+    double a;
+    double b;
+    double m;
+    a = -20.0;
+    b = 20.0;
+    m = (a + b) / 2;
+    if (fabs(f(p, q, m)) < EPSILON) {
+	return m;
+    } else if ((f(p, q, m) < 0 && f(p, q, a) > 0) || (f(p, q, m) > 0 && f(p, q, a) < 0)) {
+	while (fabs(f(p, q, m)) >= EPSILON) {
+	    if((f(p, q, m) < 0 && f(p, q, a) > 0) || (f(p, q, m) > 0 && f(p, q, a) < 0)) {
+		b = m;
+		m = (a + b) / 2;
+	    } else if ((f(p, q, m) < 0 && f(p, q, b) > 0) || (f(p, q, m) > 0 && f(p, q, b) < 0)){
+		a = m;
+		m = (a + b) / 2;
+	    }
 	}
-	return 0;
+	return m;
+    } else if ((f(p, q, m) < 0 && f(p, q, b) > 0) || (f(p, q, m) > 0 && f(p, q, b) < 0)) {
+        while (fabs(f(p, q, m)) >= EPSILON) {
+	    if((f(p, q, m) < 0 && f(p, q, a) > 0) || (f(p, q, m) > 0 && f(p, q, a) < 0)) {
+		b = m;
+		m = (a + b) / 2;
+	    } else if ((f(p, q, m) < 0 && f(p, q, b) > 0) || (f(p, q, m) > 0 && f(p, q, b) < 0)) {
+		a = m;
+		m = (a + b) / 2;
+	    }
+	}
+	return m;
+    }
+    return 0;
 }
 
 double f(int p, int q, double x) {

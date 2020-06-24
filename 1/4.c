@@ -44,7 +44,6 @@ double bisection(int p, int q, double (*func)(int, int, double)) {
 	}
 	return m;
     }
-    return 0;
 }
 
 double f(int p, int q, double x) {

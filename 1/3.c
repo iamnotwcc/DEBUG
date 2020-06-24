@@ -18,10 +18,10 @@ double bisection(int p, int q, double (*func)(int, int, double)) {
     double m;
     while(1) {
         m = (a + b) / 2;
-        double c=f(p,q,m);
-        if (c < EPSILON) {
+        double c=f(p ,q ,m);
+        if (fabs(c) < EPSILON) {
             return m;
-        } else if (f(p,q,a) * c < 0) {
+        } else if (f(p, q, a) * c < 0) {
             b = m;
         } else {
             a = m;

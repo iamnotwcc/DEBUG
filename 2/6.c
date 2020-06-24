@@ -12,12 +12,12 @@ int main() {
     int nIndex;
     int j;
     
-    for(mIndex = 0; mIndex < m; mIndex ++){
-        for(nIndex = 0; nIndex < n; nIndex ++){
+    for (mIndex = 0; mIndex < m; mIndex ++) {
+        for (nIndex = 0; nIndex < n; nIndex ++) {
             scanf("%d", &matrix_a[mIndex][nIndex]);
         }
     }
-    for(nIndex = 0; nIndex < n; nIndex ++){
+    for (nIndex = 0; nIndex < n; nIndex ++){
         for(mIndex = 0; mIndex < m; mIndex ++){
             scanf("%d", &matrix_b[nIndex][mIndex]);
         }

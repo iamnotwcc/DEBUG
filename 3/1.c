@@ -1,38 +1,59 @@
 #include <stdio.h>
-#include<math.h>
-
 
 int main() {
     int matrix[100][100];
-    int m;
-    int n;
-    int i,j;
-    int x;
-    scanf("%d %d",&m,&n);
-    for(i=0;i<m;i++){
-    	for(j=0;j<n;j++){
-            printf("%d %d\n", i, j);
-    		scanf("%d", &matrix[i][j]);
-            printf("%d %d\n", i, j);
+    int m, n;
+    scanf("%d %d", &m, &n);
+
+	int m0 = m, n0 = n;
+	int count = m * n;
+    for (int i = 0; i < m; i++) {
+		for (int j = 0; j < n; j++) {
+			scanf("%d", &matrix[i][j]);
 		}
 	}
-    return 0;
-	x=0;
-	while(m-x>1||n-x>1){
-		for(x=0;x<n-1;x++){
-			printf("%d ",matrix[x][n-2-x]);
+	int i = 0;
+    while (count != i) {
+        for (int j = n - n0; j < n0 - 1; j++) {
+	        printf("%d ", matrix[m - m0][j]);
+			i++;
+			if (i == count) {
+				break;
+			}
 		}
-		for(x=0;x<m-1;x++){
-			printf("%d ",matrix[x][n-1-x]);  
+		if (i == count) {
+			break;
 		}
-		for(x=0;x<n-1;x++){
-			printf("%d ",matrix[m-1-x][n-1-x]);
+	    for (int j = m - m0 + 1; j < m0; j++) {
+			printf("%d ", matrix[j][n0 - 1]);
+			i++;
+			if (i == count) {
+				break;
+			}
 		}
-		for(x=0;x<m-1;x++){
-			printf("%d ",matrix[m-1-x][x]);
+		if (i == count) {
+			break;
 		}
-		x++;
-	}	
+		n0--;
+		for (int j = n0 - 1; j >= n - n0 - 1; j--) {
+			printf("%d ", matrix[m0 - 1][j]);
+			i++;
+			if (i == count) {
+				break;
+			}
+		}
+		if (i == count) {
+			break;
+		}
+		m0--;
+		for (int j = m0 - 1 ; j >= m - m0; j--) {
+			printf("%d ", matrix[j][n - n0 - 1]);
+			i++;
+			if (i == count) {
+				break;
+			}
+		}
+	}
 
     return 0;
 }

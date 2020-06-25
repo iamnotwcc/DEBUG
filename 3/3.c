@@ -29,10 +29,10 @@ int main() {
                 printf(" ");
         }
     } else {
-        for (int i = 0; i < 2 * m; i++) {
+        for (int i = 0; i < 2 * m && count != m * n; i++) {
             switch (i % 4) {
                 case 0:
-                    for (j = i / 4; j < n - i / 4 - 1; j++) {
+                    for (j = i / 4; j < n - i / 4; j++) {
                         printf("%d", matrix[i / 4][j]);
                         count++;
                         if (count != m * n) 
@@ -40,18 +40,15 @@ int main() {
                     }
                     break;
                 case 1:
-                    for (j = i / 4; j < m - i / 4 - 1; j++) {
+                    for (j = i / 4 + 1; j < m - i / 4; j++) {
                         printf("%d", matrix[j][n - 1 - i / 4]);
                         count++;
                         if (count != m * n) 
                             printf(" ");
-                        if (m % 2 == 1 && count == m * n - 1) {
-                            printf("%d", matrix[j][m - i / 4 - 1]);
-                        }
                     }
                     break;
                 case 2:
-                    for (j = n - 1 - i / 4; j > i / 4; j--) {
+                    for (j = n - 1 - i / 4 - 1; j >= i / 4; j--) {
                         printf("%d", matrix[m - i / 4 - 1][j]);
                         count++;
                         if (count != m * n) 
@@ -59,7 +56,7 @@ int main() {
                     }
                     break;
                 case 3:
-                    for (j = m - 1 - i / 4; j > i / 4 ; j--) {
+                    for (j = m - 1 - i / 4 - 1; j > i / 4 ; j--) {
                         printf("%d", matrix[j][i / 4]);
                         count++;
                         if (count != m * n) 

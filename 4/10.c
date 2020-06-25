@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 int main() {
-    int n = 10;
-    int m;
+    int m, n = 10;
     int numbers[10];
-    int i;
+    int i, j, k;
     int max;
-    int k;
-    int j;
-    int o;
-    // 读入给定的数字
+    int temp;
+
     for (i = 0; i < n; i++) {
         scanf("%d", &numbers[i]);
     }
-    for (j = 0; j < n; j++) {
-        for(k = j; k < n - 1; k++){
-            if(numbers[k] < numbers[k+1]){
-                m = k + 1;
+    for (j = 0; j < n - 1; j++) {
+		max = j;
+        for (k = j + 1; k < n; k++) {
+            if(numbers[max] < numbers[k]){
+                max = k;
             }
            
         }
-        o = numbers[j];
-        numbers[j] = numbers[m];
-        numbers[m] = o;
+		if (max != j) {
+			temp = numbers[j];
+			numbers[j] = numbers[max];
+			numbers[max] = temp;
+		}
     }
     for (int q = 0; q < n; q++) {
         if (q == 9) {

@@ -7,12 +7,16 @@ int main() {
     char name[100][101];
     int i, j;
     char largest[101];
-    for (i = 0; i < n; i++)
-        for(j = 0; scanf("%c", &name[i][j]) != EOF && name[i][j] != '\n'; j++);
-    for (strcpy(largest, name[0]), i = 1; i < n; i++)
+    for (i = 0; i < n; i++) {
+        for (j = 0; scanf("%c", &name[i][j]) != EOF && name[i][j] != '\n'; j++) {
+		};
+		name[i][j] = '\0';
+	}
+    for (strcpy(largest, name[0]), i = 1; i < n; i++) {
         if (strlen(largest) < strlen(name[i]))
             strcpy(largest, name[i]);
-    printf("%s", largest);
+	}
+    printf("%s\n", largest);
     
     return 0;
 }

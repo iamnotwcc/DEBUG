@@ -13,7 +13,7 @@ int main()
     int n = 10;
     int numbers[10];
     int i;
-	int j;
+    int j;
 
     for (i = 0; i < n; i++) {
         scanf("%d", &numbers[i]);

@@ -21,11 +21,11 @@ int main()
     }
     
     for (i = 0; i < n; i++) {
-    	for (int j = i; j < n; j++) {
+        for (int j = i; j < n; j++) {
     	    if (numbers[i] < numbers[j]) {
                 swap(&numbers[i], &numbers[j]);
             }
-	}
+        }
     }
     
     for (m = 0; m < 10; m++) {

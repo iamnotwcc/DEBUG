@@ -12,20 +12,20 @@ int main()
     }
 	
     for(j = 0; j < 9; j++) {
-	for(int k = 0; k < 9 - j; k++) {
+        for(int k = 0; k < 9 - j; k++) {
 	    if(numbers[k] < numbers[k+1]) {
 	        m = numbers[k];
 		numbers[k] = numbers[k+1];
 		numbers[k+1] = m;
 	    }
-	}
+        }
     }
 	
     for(i = 0; i < 10; i++) {
-	printf("%d", numbers[i]);
-	if(i < 9) {
-	    printf(" ");
-	}
+        printf("%d", numbers[i]);
+        if(i < 9) {
+            printf(" ");
+        }
     }
 	
     return 0;

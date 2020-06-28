@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+
+int main() 
+{
     int n;
     scanf("%d\n", &n);
     char names[n][101];
     char max[101];
     
     for (int i = 0; i < n; i++) {
-         gets(names[i]);
+        gets(names[i]);
     } 
     
     for (int i = 0; i < n; i++) {
@@ -21,6 +23,7 @@ int main() {
         }
     }
     
-    printf("%s\n", max);
+    printf("%s", max);
+
     return 0;
 }

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main() 
+{
     int n;
     int i = 0, j = 0;
     scanf("%d", &n);
@@ -24,12 +25,12 @@ int main() {
     int number=0;
     for (i = 1; i < n; i++) {
         if (max < strlen(names[i])) {
-            max= strlen(names[i]);
+            max = strlen(names[i]);
             number = i;
         }
     }
     
-    printf("%s\n", names[number]);
+    printf("%s", names[number]);
 
     return 0;
 }

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     char pms[4];
     char change_pms[100][3];
     int i = 0, j;

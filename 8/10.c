@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     int n;
     scanf("%d\n", &n);
 
@@ -16,7 +17,7 @@ int main() {
             }
             if (a[i][j] == '\n') {
                 a[i][j] = '\0';
-				break;
+    			break;
             }
         }
     }

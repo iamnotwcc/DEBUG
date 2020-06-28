@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void swap(int a, int b, int *numbers) {
+void swap(int a, int b, int *numbers)
+{
     int c;
     if (numbers[a] < numbers[b]) {
         c = numbers[a];
@@ -9,7 +10,8 @@ void swap(int a, int b, int *numbers) {
     }
 }
 
-int main() {
+int main()
+{
     int n = 10;
     int m;
     int numbers[10];
@@ -30,7 +32,5 @@ int main() {
 		}
     }
     
-
-
     return 0;
 }

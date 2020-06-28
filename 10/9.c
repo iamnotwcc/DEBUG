@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int a, b, c;
     scanf("%d", &a);
 
@@ -10,9 +11,9 @@ int main() {
               break; 
            }
         }
-		if (c == b) {
-			printf("%d\n", b);
-		}
+    	if (c == b) {
+    		printf("%d\n", b);
+    	}
     }
 
     return 0;

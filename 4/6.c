@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n = 10;
     int numbers[10];
     int i, j;

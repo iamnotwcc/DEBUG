@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     char input[500];
     char arr[32] = {0};
     int bits[32];
@@ -22,7 +23,7 @@ int main() {
     }
     
     result[32] = '\0';
-	printf("%s\n", result);
+    printf("%s\n", result);
 
     return 0;
 }

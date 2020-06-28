@@ -9,7 +9,8 @@ typedef struct node {
 Node *circle_create(int n);
 void count_off(Node *head, int n, int k, int m);
 
-int main() {
+int main()
+{
     int n, k, m;
     scanf("%d%d%d", &n, &k, &m);
     Node *head = circle_create(n);
@@ -17,7 +18,8 @@ int main() {
     return 0;
 }
 
-Node *circle_create(int n) {
+Node *circle_create(int n)
+{
     Node *temp, *new_node, *head;
     int i;
 
@@ -37,7 +39,8 @@ Node *circle_create(int n) {
     return head;
 }
 
-void count_off(Node *head, int n, int k, int m) {
+void count_off(Node *head, int n, int k, int m)
+{
     Node *temp, *prev;
     temp = head;
     prev = temp;
@@ -56,10 +59,10 @@ void count_off(Node *head, int n, int k, int m) {
         }
         printf("%d ", temp->data);
         count++;
-		Node *p = temp;
+    	Node *p = temp;
         prev->next = p->next;
         temp = p->next;
-		free(p);
+    	free(p);
     }
     
     return ;

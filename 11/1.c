@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     int arr[32] = {0};
     char input[500];
     int bits[32];
     char result[33];
     int i = 0, j = 0;
-	scanf("%s", input);
-	int length = strlen(input);
+    scanf("%s", input);
+    int length = strlen(input);
     while (i < length) {
         arr[(i + 1) % 32] = arr[(i + 1) % 32] + (int)input[i];
         i++;

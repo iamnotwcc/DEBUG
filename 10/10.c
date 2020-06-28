@@ -8,13 +8,13 @@ int main()
     printf("2\n");
     for (i = 3; i <= N; i++) {
         for (j = 2; j <= i; j++) {
-			if (i % j == 0) {
+    		if (i % j == 0) {
                break;
-			}
-		}
-		if (i == j) {
-			printf("%d\n", i);
-		}
+    		}
+    	}
+    	if (i == j) {
+    		printf("%d\n", i);
+    	}
     }
 
     return 0;

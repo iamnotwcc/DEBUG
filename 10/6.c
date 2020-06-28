@@ -1,18 +1,19 @@
 #include <stdio.h>
 
-int main() {
-	int a,b,c;
+int main()
+{
+    int a,b,c;
     scanf("%d", &c);
         
-	for (b = 2; b <= c; b++) { 
-		for (a = 2; a < b; a++) {
-			if (b % a == 0) {
-				break;
-			}
-		}
+    for (b = 2; b <= c; b++) { 
+    	for (a = 2; a < b; a++) {
+    		if (b % a == 0) {
+    			break;
+    		}
+    	}
         if (a >= b) {
-			printf("%d\n",b);
-		}
+    		printf("%d\n",b);
+    	}
      }
 
     return 0;

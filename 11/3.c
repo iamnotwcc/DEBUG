@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     int arr[32];
     memset(arr, 0, sizeof(arr));
     char n;    
     int i = 1;
     
-	while (scanf("%c", &n) != EOF){
+    while (scanf("%c", &n) != EOF) {
        if(n=='\n'){
            break;
        }
@@ -18,7 +19,7 @@ int main() {
     }
 
     int bits[32];
-	int j;
+    int j;
     for (j = 0; j < 32; j++) {
         bits[j] = arr[31 - j] ^ (arr[j] << 1);
     }

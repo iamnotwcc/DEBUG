@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int matrix[100][100];
     int m;
     int n;
@@ -16,37 +17,21 @@ int main() {
 	int total = m * n;
     
     int start = 0, column = n, row = m;
-   // while (count != total) {
         if (n == 1) {
             for (int i = 0; i < m; i++) {
                 if (i == m - 1){
                     printf("%d", matrix[i][0]);
-					//count++;
-					//if (count == total) {
-					//	break;
-					//}
                 } else {
 					printf("%d ", matrix[i][0]);
 					count++;
-					//if (count == total) {
-					//	break;
-					//}
 				}
             }
         } else if (m == 1) {
             for (int j = 0; j < n; j++) {
                 if (j == n - 1){
                     printf("%d", matrix[0][j]);
-					//count++;
-					//if (count == total) {
-					//	break;
-					//}
                 } else {
 					printf("%d ", matrix[0][j]);
-					//count++;
-					//if (count == total) {
-					//	break;
-					//}
 				}
             }
         } else {
@@ -93,10 +78,6 @@ int main() {
 			row--;
 			}
         }
-    //	start++;
-    //	column--;
-    //	row--;
-   // }
 
     return 0;
 }

@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 void space(int, int);
+
 int main()
 {
     int matrix[100][100];
@@ -46,7 +48,8 @@ int main()
     }
     return 0;
 }
-void space(int a, int b){
+void space(int a, int b)
+{
     if(a != b){
         printf(" ");
     }

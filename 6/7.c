@@ -4,7 +4,8 @@ void add(char input);
 void delete1(char input);
 int rwx = 0;
 
-int main() {
+int main()
+{
     char temp;
     scanf("%c", &temp);
     if (temp == 'x') {
@@ -40,7 +41,8 @@ int main() {
     
 	return 0;
 }
-void add(char input) {
+void add(char input)
+{
     if (input == 'r' && rwx / 4 != 1) {
 		rwx ^= (1 << 2);
 	} else if (input == 'w' && (rwx / 2 % 2 != 1)) {
@@ -49,7 +51,8 @@ void add(char input) {
 		rwx ^= (1 << 0);
 	}
 }
-void delete1(char input) {
+void delete1(char input)
+{
     if (input == 'r' && rwx / 4 == 1) {
 		rwx ^= (1 << 2);
 	} else if (input == 'w' && (rwx / 2 % 2 == 1)) {

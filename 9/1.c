@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-int cal_step(int a[], int n){
+int cal_step(int a[], int n)
+{
     return a[n] = a[n - 2] + a[n - 3];
 }
-int main() {
-	int N;
+
+int main()
+{
+    int N;
     scanf("%d", &N);
     int step[50];
     step[0] = 0;
@@ -16,5 +19,5 @@ int main() {
     }
     printf("%d\n", step[N]);
     
-	return 0;
+    return 0;
 }

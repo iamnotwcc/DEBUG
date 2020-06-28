@@ -3,7 +3,8 @@
 
 void swap (char *b, char *c);
 
-int main() {
+int main()
+{
     char name[10][21];
     int i, j;
     int m = 10;

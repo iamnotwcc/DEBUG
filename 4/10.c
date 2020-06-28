@@ -12,18 +12,18 @@ int main()
         scanf("%d", &numbers[i]);
     }
     for (j = 0; j < n - 1; j++) {
-		max = j;
+    	max = j;
         for (k = j + 1; k < n; k++) {
             if(numbers[max] < numbers[k]){
                 max = k;
             }
            
         }
-		if (max != j) {
-			temp = numbers[j];
-			numbers[j] = numbers[max];
-			numbers[max] = temp;
-		}
+    	if (max != j) {
+    		temp = numbers[j];
+    		numbers[j] = numbers[max];
+    		numbers[max] = temp;
+    	}
     }
     for (int q = 0; q < n; q++) {
         if (q == 9) {

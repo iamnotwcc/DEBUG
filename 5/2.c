@@ -11,9 +11,9 @@ void swap(char *a, char *b)
 
 int main()
 {
-	int i, j, k, l;
-	char name[10][21];
-	char temp;
+    int i, j, k, l;
+    char name[10][21];
+    char temp;
     for (i = 0; i < 10; i++) {
         scanf("%s", name[i]);
     }
@@ -21,7 +21,7 @@ int main()
         for (k = 0; k < 9 - j; k++) {
             if (strcmp(name[k], name[k + 1]) >= 0) {
                 for (l = 0; l < 21; l++) {  
-                	swap(&name[k][l], &name[k + 1][l]);   
+                    swap(&name[k][l], &name[k + 1][l]);   
                 }
             }
         }

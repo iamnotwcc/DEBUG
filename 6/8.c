@@ -13,8 +13,8 @@ int main()
         } else if (n == 'x') {
             a[2] = 1;
         } else {
-			break;
-		}
+    		break;
+    	}
     }
     while (scanf("%c", &n) != EOF) {
         if (n == '\n') {
@@ -26,27 +26,27 @@ int main()
                 a[0] = 1;
             }
             if (n == 'w') {
-				a[1] = 1;
+    			a[1] = 1;
             }
             if (n == 'x') {
-				a[2] = 1;
+    			a[2] = 1;
             }
         }
         if (n == '-') {
             scanf("%c" , &n);
             if (n == 'r') {
-				a[0] = 0;
+    			a[0] = 0;
             }
             if (n == 'w') {
-				a[1] = 0;
+    			a[1] = 0;
             }
             if (n == 'x') {
-				a[2] = 0;
+    			a[2] = 0;
             }
         }
     }
     int o = a[0] * 2 * 2 + a[1] * 2 + a[2];
     printf("%d", o);
     
-	return 0;
+    return 0;
 }

@@ -21,7 +21,7 @@ int main()
             count++;
             if (count != m * n) {
                 printf(" ");
-			}
+    		}
         }
     } else if (n == 1) {
         for (j = 0; j < m; j++) {
@@ -29,7 +29,7 @@ int main()
             count++;
             if (count != m * n) {
                 printf(" ");
-			}
+    		}
         }
     } else {
         for (int i = 0; i < 2 * m && count != m * n; i++) {
@@ -40,7 +40,7 @@ int main()
                         count++;
                         if (count != m * n) {
                             printf(" ");
-						}
+    					}
                     }
                     break;
                 case 1:
@@ -49,7 +49,7 @@ int main()
                         count++;
                         if (count != m * n) {
                             printf(" ");
-						}
+    					}
                     }
                     break;
                 case 2:
@@ -58,7 +58,7 @@ int main()
                         count++;
                         if (count != m * n) {
                             printf(" ");
-						}
+    					}
                     }
                     break;
                 case 3:
@@ -67,7 +67,7 @@ int main()
                         count++;
                         if (count != m * n) {
                             printf(" ");
-						}
+    					}
                     }
                     break;
             }

@@ -42,11 +42,11 @@ int main()
                 a -= 1;
             }
         } else {
-			break;
-		}
+    		break;
+    	}
     }
 
     printf("%d", a);
     
-	return 0;
+    return 0;
 }

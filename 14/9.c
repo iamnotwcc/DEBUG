@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n;
     int i, j;
     
@@ -13,8 +14,8 @@ int main() {
                 }
             }
         if (i != 1) {
-			printf("\n");
-		}
+    		printf("\n");
+    	}
     }    
 
     return 0;

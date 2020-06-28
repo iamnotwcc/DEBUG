@@ -2,45 +2,45 @@
 
 int main()
 {
-	int year;
-	int mouth;
-	int day ;
-	scanf("%d-%d-%d", &year, &mouth, &day);
-	if (mouth <= 12 && mouth >= 1) {
-		if (mouth ==1 || mouth == 3 || mouth == 5 || mouth == 7 || mouth== 8 || mouth == 10 || mouth == 12) {
-			if (day <= 31 && day >= 1) {
-				printf("YES");
-			} else {
-				printf("NO");
-			}
-		} else if (mouth == 4 || mouth == 6 || mouth == 9|| mouth == 11) {
-			if (day <= 30 && day >= 1) {
-				printf("YES");
-			} else {
-				printf("NO");
-			}
-		} else if (mouth == 2) {
-			if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-				if (day >= 1 && day <=29) {
-					printf("YES");
-				} else {
-					printf("NO");
-				}
-			} else {
-				if (day >= 1 && day <= 28) {
-					printf("YES");
-				} else {
-					printf("NO");
-				}
-			}
+    int year;
+    int mouth;
+    int day ;
+    scanf("%d-%d-%d", &year, &mouth, &day);
+    if (mouth <= 12 && mouth >= 1) {
+    	if (mouth ==1 || mouth == 3 || mouth == 5 || mouth == 7 || mouth== 8 || mouth == 10 || mouth == 12) {
+    		if (day <= 31 && day >= 1) {
+    			printf("YES");
+    		} else {
+    			printf("NO");
+    		}
+    	} else if (mouth == 4 || mouth == 6 || mouth == 9|| mouth == 11) {
+    		if (day <= 30 && day >= 1) {
+    			printf("YES");
+    		} else {
+    			printf("NO");
+    		}
+    	} else if (mouth == 2) {
+    		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+    			if (day >= 1 && day <=29) {
+    				printf("YES");
+    			} else {
+    				printf("NO");
+    			}
+    		} else {
+    			if (day >= 1 && day <= 28) {
+    				printf("YES");
+    			} else {
+    				printf("NO");
+    			}
+    		}
         } else {
-			printf("NO");
-		}
+    		printf("NO");
+    	}
     } else {
-		printf("NO");
-	}
-	printf("\n");
+    	printf("NO");
+    }
+    printf("\n");
 
-	return 0;
+    return 0;
 }
     

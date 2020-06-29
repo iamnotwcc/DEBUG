@@ -49,7 +49,7 @@ void count_off(Node *head, int n, int k, int m)
     } else {
         for (int i = 1; i < k-1; i++) {
             temp = temp->next;
-        	}
+        }
     }
     int num = 0;
     int count = 0;
@@ -62,9 +62,9 @@ void count_off(Node *head, int n, int k, int m)
             } else {
                 printf("%d ", temp->next->data); 
             }
-    		Node *p = temp->next;
+    	    Node *p = temp->next;
             temp->next = p->next;
-    		free(p);
+    	    free(p);
             num = 0;
         } else {
             temp = temp->next;

@@ -3,7 +3,7 @@
 
 int main() 
 {
-    char arr[32] = {0};
+    int  arr[32] = {0};
     char str[32];
     int  bits[32];
     char result[32];

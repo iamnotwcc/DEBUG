@@ -19,37 +19,37 @@ int main()
             printf("%d ", matrix[m - m0][j]);
     		i++;
     		if (i == count) {
-    			break;
+    		    break;
     		}
     	}
     	if (i == count) {
-    		break;
+    	    break;
     	}
         for (int j = m - m0 + 1; j < m0; j++) {
     		printf("%d ", matrix[j][n0 - 1]);
     		i++;
     		if (i == count) {
-    			break;
+    	        break;
     		}
     	}
     	if (i == count) {
-    		break;
+    	    break;
     	}
     	for (int j = n0 - 2; j >= n - n0; j--) {
     		printf("%d ", matrix[m0 - 1][j]);
     		i++;
     		if (i == count) {
-    			break;
+    		    break;
     		}
     	}
     	if (i == count) {
-    		break;
+    	    break;
     	}
     	for (int j = m0 - 2; j >= m - m0 + 1; j--) {
     		printf("%d ", matrix[j][n - n0]);
     		i++;
     		if (i == count) {
-    			break;
+    		    break;
     		}
     	}
         m0--;

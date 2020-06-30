@@ -10,7 +10,6 @@ int main()
 
     while (scanf("%s", name) != EOF) {
         strcpy(temp[i], name);
-        printf("%s\n", temp[i]);
         i++;
     }
     

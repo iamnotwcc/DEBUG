@@ -13,6 +13,7 @@ int main()
     int m3[10][10] = {0};
     
     scanf("%d %d", &m, &n);
+    
     for(i = 0; i < m ; i++) {
         for(j = 0; j < n; j++) {
             scanf("%d", &matrix_a[i][j]);
@@ -25,13 +26,6 @@ int main()
         }
     }
     
-    for(i = 0; i < m; i++) {
-        for(j = 0; j < m; j++) {
-            printf("%d ", m3[i][j]);
-        }
-        printf("\n");
-    }
-
     for(i = 0; i < m; i++) {
         for(j = 0; j < m; j++) {
             for(k = 0; k < n; k++) {

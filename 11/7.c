@@ -3,7 +3,8 @@
 
 int main() 
 {
-    char str[500], arr[32] = {0};
+    char str[500];
+    int  arr[32] = {0};
     int  bits[32];
     int  i;
     int  j = 1;

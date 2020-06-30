@@ -37,7 +37,7 @@ int main()
         } else if(strcmp(str, xx) == 0) {
             if (strcmp(oprator, plus) == 0) {
                 x = 1;
-            } else if (strcmp(oprator, minus) == 0) {
+            } else if (strcmp(oprator, "@") == 0) {
                 x = 1;
             } else {
                 x = 0;  

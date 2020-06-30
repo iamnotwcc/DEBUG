@@ -22,14 +22,14 @@ double bisection(int p, int q, double (*func)(int, int, double))
     
     while (1) {      
         if (fabs(func(p, q, m)) < EPSILON) {
-        	return m;
-		} else {
-        	if (func(p, q, m) * func(p, q, a) < 0) {
-        		b = m;
-			} else {
-				a = m;
-			}
-			m = (a + b) / 2;
+            return m;
+	} else {
+            if (func(p, q, m) * func(p, q, a) < 0) {
+        	b = m;
+	    } else {
+		a = m;
+	    }
+	    m = (a + b) / 2;
         }
     }
 }

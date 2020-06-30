@@ -32,8 +32,7 @@ double bisection(int p, int q, double (*func)(int, int, double))
 	    c = (a + b) / 2;
         }
     }
-    return c;
-        
+    return c;   
 }
 
 double f(int p, int q, double x)

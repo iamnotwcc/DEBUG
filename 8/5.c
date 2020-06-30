@@ -5,8 +5,8 @@ int main()
 {
     int n;
     scanf("%d\n", &n); 
-    char name[n][100];
-    char name_max[100];
+    char name[n][101];
+    char name_max[101];
 
     for (int i = 0; i < n; i++) {
         gets(name[i]);

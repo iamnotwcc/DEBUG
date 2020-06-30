@@ -5,8 +5,8 @@ int main()
 {
     int n;
     scanf("%d\n", &n);
-    char name[n][100];
-    char temp[100];
+    char name[n][101];
+    char temp[101];
     
 
     for(int i = 0; i < n; i++) {

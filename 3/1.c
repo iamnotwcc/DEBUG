@@ -29,7 +29,7 @@ int main()
     		printf("%d ", matrix[j][n0 - 1]);
     		i++;
     		if (i == count) {
-    	        break;
+                break;
     		}
     	}
     	if (i == count) {

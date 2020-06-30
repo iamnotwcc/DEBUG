@@ -53,7 +53,7 @@ int main()
 	m = n;
 	n = t - 1;
 			
-	} while (m >= 1 && n >= 1);
+    } while (m >= 1 && n >= 1);
 	
     return 0;
 }

@@ -35,7 +35,6 @@ Node *circle_create(int n)
     }
 
     temp->next = head;
-
     return head;
 }
 

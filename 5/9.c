@@ -13,10 +13,10 @@ int main()
     for(i = 0; i < 9; i++) {
         for(j = i; j < 10; j++) {
             if(strcmp(name[i], name[j]) > 0) {
-            char temp[21];
-            strcpy(temp, name[i]);
-            strcpy(name[i], name[j]);
-            strcpy(name[j], temp);
+                char temp[21];
+                strcpy(temp, name[i]);
+                strcpy(name[i], name[j]);
+                strcpy(name[j], temp);
             }
         }
     }

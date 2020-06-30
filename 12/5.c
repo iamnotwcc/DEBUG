@@ -4,9 +4,9 @@
 
 int main() 
 {
-    float r, a, b;
+    double r, a, b;
 
-    scanf("%f", &r);
+    scanf("%lf", &r);
 
     a = 2 * PI * r;
     b = PI * r * r;

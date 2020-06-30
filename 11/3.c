@@ -15,7 +15,6 @@ int main()
         int c=(int)n;
         arr[i % 32] += c;
         i++;
-       
     }
 
     int bits[32];

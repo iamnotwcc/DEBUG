@@ -68,6 +68,5 @@ int main()
         startY++;
     }
     
-   
     return 0;
 }

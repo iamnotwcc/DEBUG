@@ -32,6 +32,10 @@ int main()
             }
         }    
     }
+    
+    if (m > 12) {
+        printf("NO");
+    }
 
     return 0;
 }

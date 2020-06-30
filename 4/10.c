@@ -17,7 +17,6 @@ int main()
             if(numbers[max] < numbers[k]){
                 max = k;
             }
-           
         }
     	if (max != j) {
     		temp = numbers[j];

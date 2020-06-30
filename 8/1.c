@@ -4,8 +4,8 @@
 int main()
 {
     int  n;
-    char names[100][101];
-    char max[101];
+    char names[200][200];
+    char max[200];
 
     scanf("%d\n", &n);
 

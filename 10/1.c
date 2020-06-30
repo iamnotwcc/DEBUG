@@ -5,6 +5,8 @@ int main()
     int a, b, c, d;
 
     scanf("%d", &a);
+    
+    printf("2\n");
 
     for(d = 2; d <= a; d++) {
         for(b = 2; b < d; b++) {

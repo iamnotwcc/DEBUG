@@ -10,7 +10,7 @@ int main()
     for (i = 0; i < n; i++){
         for (j = 0; j < 101; j++){
             scanf("%c", &string[i][j]);
-            if (string[i][j] == '\n'){
+            if (string[i][j] == '\n' || string[i][j] == 'EOF'){
                 string[i][j] = '\0';
                 break;
             }
@@ -18,7 +18,7 @@ int main()
     }
     char str[101];
     for (i = 0; i < n - 1; i++) {
-        if (strlen(string[i]) > strlen(string[i + 1])) {
+        if (strlen(string[i]) >= strlen(string[i + 1])) {
             strcpy(str, string[i]);
             strcpy(string[i], string[i + 1]);
             strcpy(string[i + 1], str);
